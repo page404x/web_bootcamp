@@ -1,0 +1,11 @@
+div {
+    display:flex;
+    gap:1%;
+    background-color: gold;
+}
+
+p {
+    padding:1px;
+    border:1px;
+    font-weight:600px;
+}
