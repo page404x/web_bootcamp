@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flex_container {
+      display:flex;
+      justify-content: center;
+      align-items:center;
+    }
+
+    .grid_container {
+      width: 748px;
+      height:748px;
+      background-color: #F0F1EC;
+      display:grid;
+      grid-template-columns: 1.5fr 1fr 1fr 0.2fr;
+      grid-template-rows: 1.7fr 0.4fr 1fr 0.1fr;
+      
+    }
+    .right_border {
+      border-right:5px solid black;
+    }
+
+    .left_border {
+      border-left:5px solid black;
+    }
+
+    .top_border {
+      border-top:5px solid black;
+    }
+    .bottom_border {
+      border-bottom:5px solid black;
+    }
+
+    .box1 {
+      background-color:#E72F24 ;
+      
+    }
+
+    .box2 {
+      background-color:#F0F1EC;
+      grid-column-start:2;
+      grid-column-end:5;
+      
+    }
+
+    .box3{
+      background-color:#F0F1EC;
+      grid-row: span 2;
+    }
+
+    .box4{
+      background-color:#F0F1EC;
+      grid-column-start:2;
+      grid-column-end:4;
+      grid-row: span 2;
+    }
+
+    .box7 {
+      background-color:#F0F1EC;
+  
+    }
+    .box5 {
+      background-color:#004592;
+    }
+    .box6 {
+      background-color:#F0F1EC;
+     
+    }
+    .box8 {
+      background-color: #F9D01E
+    }
+    .box9 {
+      background-color:#232629;
+    
+    }
+   
+  
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex_container">
+  <div class="grid_container">
+    <div class="bottom_border right_border box1 ">
+        
+    </div>
+    <div class="bottom_border box2">
+        
+    </div>
+
+    <div class="right_border bottom_border box3">
+   
+    </div>
+
+    <div class="right_border bottom_border box4">
+      
+    </div>
+
+    <div class="bottom_border box5">
+      
+    </div>
+
+    <div class="top_border box6">
+      
+    </div>
+    <div class="right_border box7">
+    
+    </div>
+    <div class="box8">
+      
+    </div>
+    <div class="box9">
+     
+    </div>
+
+  </div>
+</div>
+  
+</body>
+
+</html>
